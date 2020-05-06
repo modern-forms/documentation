@@ -31,5 +31,22 @@ public static class Application
 
 ## Examples
 
+The most common use of this class is to start running a Modern.Forms application using
+a specified Form.
+
+```
+public static void Main (string[] args)
+{
+    var form = new Form ();
+
+    form.Controls.Add (new Button ());
+
+    Application.Run (form);
+}
+```
+
+This will display the `Form` to the user.  When the `Form` is closed, the application
+will automatically terminate.
+
 ## Remarks
 
